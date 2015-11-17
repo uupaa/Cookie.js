@@ -1,6 +1,6 @@
 {
   "name": "uupaa.cookie.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Cookie parse and build.",
   "url": "https://github.com/uupaa/Cookie.js",
   "keywords": ["cookie", "uupaa", "WebModule", "Unstable"],
