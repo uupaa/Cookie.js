@@ -16,7 +16,6 @@ This module made of [WebModule](https://github.com/uupaa/WebModule).
 <script src="<module-dir>/lib/WebModule.js"></script>
 <script src="<module-dir>/lib/Cookie.js"></script>
 <script>
-
 if (Cookie.ready) {
     var obj = Cookie.parse("lang=ja;id=123");
     obj.lang // -> "ja"
@@ -27,4 +26,19 @@ if (Cookie.ready) {
 </script>
 ```
 
+## WebWorkers
+
+```js
+importScripts("<module-dir>/lib/WebModule.js");
+importScripts("<module-dir>/lib/Cookie.js");
+
+```
+
+## Node.js
+
+```js
+require("<module-dir>/lib/WebModule.js");
+require("<module-dir>/lib/Cookie.js");
+
+```
 

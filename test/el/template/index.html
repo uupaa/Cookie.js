@@ -4,8 +4,9 @@
 
 <script src="../../lib/WebModule.js"></script>
 <script>
-// publish to global
-WebModule.publish = true;
+WebModule.VERIFY  = __WEBMODULE_VERIFY__;
+WebModule.VERBOSE = __WEBMODULE_VERBOSE__;
+WebModule.PUBLISH = __WEBMODULE_PUBLISH__;
 </script>
 
 __MODULES__

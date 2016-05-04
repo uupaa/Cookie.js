@@ -2,8 +2,9 @@
 
 require("../../lib/WebModule.js");
 
-// publish to global
-WebModule.publish = true;
+WebModule.VERIFY  = true;
+WebModule.VERBOSE = true;
+WebModule.PUBLISH = true;
 
 
 require("../wmtools.js");

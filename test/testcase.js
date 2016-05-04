@@ -1,8 +1,6 @@
 var ModuleTestCookie = (function(global) {
 
-global["BENCHMARK"] = false;
-
-var test = new Test("Cookie", {
+var test = new Test(["Cookie"], { // Add the ModuleName to be tested here (if necessary).
         disable:    false, // disable all tests.
         browser:    true,  // enable browser test.
         worker:     false, // enable worker test.
@@ -18,24 +16,10 @@ var test = new Test("Cookie", {
             console.error(error.message);
         }
     }).add([
-        // Generic test
         testCookie_parse,
         testCookie_build,
     ]);
 
-if (IN_BROWSER || IN_NW || IN_EL) {
-    test.add([
-        // Browser, NW.js and Electron test
-    ]);
-} else if (IN_WORKER) {
-    test.add([
-        // WebWorkers test
-    ]);
-} else if (IN_NODE) {
-    test.add([
-        // Node.js test
-    ]);
-}
 
 // --- test cases ------------------------------------------
 function testCookie_parse(test, pass, miss) {
